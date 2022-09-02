@@ -18,7 +18,7 @@
 	<PackageTags>pic16f876 lcdlm016 serialports</PackageTags>
 	<PackageReleaseNotes>
 		feat: check phrafe length
-		add: callback in conexion thread
+		add: safe callback in conexion thread
 	</PackageReleaseNotes>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  

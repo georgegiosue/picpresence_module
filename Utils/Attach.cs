@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace picpresencelib.Utils
 {
-    internal class Attach
+    public class Attach
     {
         private readonly SerialPortFlow _serialPort;
         public delegate string addRow();

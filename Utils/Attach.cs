@@ -8,37 +8,31 @@ namespace picpresencelib.Utils
         public SerialPortFlow _serialPort { get; set; }
         public delegate string addRow();
         public delegate void callback();
-        public int LCDVisibleAreaLength { get; set;}
-        
-        public Attach(SerialPortFlow _serialPort, int LCDVisibleAreaLength = 16)
+        public Thread thr { set; get; }
+        public int LCDVisibleAreaLength { get; set; }
+        public delegate void reactiveFetch();
+
+        public Attach2(SerialPortFlow _serialPort, int LCDVisibleAreaLength = 16)
         {
             this._serialPort = _serialPort;
             this.LCDVisibleAreaLength = LCDVisibleAreaLength;
         }
 
-        public void Run(addRow r1, addRow r2, callback? callback = null, int delay = 1000)
+        public void Run(addRow r1, addRow r2, reactiveFetch reactiveFetch, int delay = 1000)
         {
 
-            Thread thr = new Thread(() =>
+            thr = new Thread(() =>
             {
                 while (true)
                 {
 
-                    if(callback != null)
-                    {
-                        callback();
-                    }
-                        
+                    reactiveFetch();
+
                     var _r1 = r1();
                     var _r2 = r2();
 
-                    if(_r1 != null && _r1.Length <= LCDVisibleAreaLength && 
-                       _r2 != null && _r2.Length <= LCDVisibleAreaLength
-                     )
-                    {
-                         _serialPort.Write(_r1+_r2);
-                    }
- 
+                    _serialPort.Write(_r1 + _r2);
+
                     Thread.Sleep(delay);
                 }
             });

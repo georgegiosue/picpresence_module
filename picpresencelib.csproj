@@ -9,7 +9,7 @@
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <WinUISDKReferences>false</WinUISDKReferences>
 	<PackageId>picpresencemodule</PackageId>
-	<PackageVersion>1.1.2</PackageVersion>
+	<PackageVersion>1.1.3</PackageVersion>
 	<Authors>16george</Authors>
 	<Description>A simple module to connect PIC16F876 with an LCD LM016L through serial ports connection.</Description>
 	<PackageProjectUrl>https://github.com/16george/picpresence_module</PackageProjectUrl>
@@ -17,8 +17,7 @@
 	<RespositoryType>git</RespositoryType>
 	<PackageTags>pic16f876 lcdlm016 serialports</PackageTags>
 	<PackageReleaseNotes>
-		feat: check phrafe length
-		add: safe callback in conexion thread
+		fix attach method
 	</PackageReleaseNotes>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  

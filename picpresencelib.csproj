@@ -8,6 +8,20 @@
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <WinUISDKReferences>false</WinUISDKReferences>
+	<PackageId>picpresencemodule</PackageId>
+	<PackageVersion>1.0.1</PackageVersion>
+	<Authors>16george</Authors>
+	<Description>A simple module to connect PIC16F876 with an LCD LM016L through serial ports connection.</Description>
+	<PackageProjectUrl>https://github.com/16george/picpresence_module</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/16george/picpresence_module</RepositoryUrl>
+	<RespositoryType>git</RespositoryType>
+	<PackageTags>pic16f876 lcdlm016 serialports</PackageTags>
+	<PackageReleaseNotes>
+		fixed [Attach class] visibility
+		- internal -> public
+	</PackageReleaseNotes>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  
   </PropertyGroup>
 
   <ItemGroup>

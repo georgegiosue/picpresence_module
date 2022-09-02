@@ -5,7 +5,7 @@ namespace picpresencelib.Utils
 {
     public class Attach
     {
-        private readonly SerialPortFlow _serialPort;
+        public readonly SerialPortFlow _serialPort { get; set; }
         public delegate string addRow();
 
         public Attach(SerialPortFlow _serialPort)

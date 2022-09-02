@@ -8,16 +8,17 @@ namespace picpresencelib.Core
     public class SerialPortFlow : ISerialPort
     {
         
-        private string Port { get; set; }
-        private int BaudRate;
-        private int DataBits = 8;
-        public SerialPort _serialPort;
+        public string Port { get; set; }
+        public int BaudRate { get; set; }
+        public int DataBits { get; set; }
+        public SerialPort _serialPort { get; set; }
         public delegate void Suscribe(string data);
-        private int ReceivedBytesThreshold;
-        private Suscribe _suscribe;
-        public string Data;
+        public int ReceivedBytesThreshold { get; set; }
+        public Suscribe _suscribe { get; set; }
+        public string Data { get; set; }
         public string CurrentState { set; get; } 
-        private enum State 
+        
+        public enum State 
         {
             OPEN,
             BUSY,

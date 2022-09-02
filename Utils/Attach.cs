@@ -12,7 +12,7 @@ namespace picpresencelib.Utils
         public int LCDVisibleAreaLength { get; set; }
         public delegate void reactiveFetch();
 
-        public Attach2(SerialPortFlow _serialPort, int LCDVisibleAreaLength = 16)
+        public Attach(SerialPortFlow _serialPort, int LCDVisibleAreaLength = 16)
         {
             this._serialPort = _serialPort;
             this.LCDVisibleAreaLength = LCDVisibleAreaLength;

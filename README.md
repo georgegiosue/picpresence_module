@@ -12,10 +12,9 @@
 1. [Description](#description)
 2. [Structure](#structure)
 3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contribution](#contribution)
-6. [Troubleshooting](#troubleshooting)
-7. [License](#license)
+4. [Contribution](#contribution)
+5. [Troubleshooting](#troubleshooting)
+6. [License](#license)
 
 ## Description 🖋️
 
@@ -41,12 +40,6 @@ Picpresence Module is a simple module designed to connect PIC16F876 with an LCD 
 
 ## Installation 💻
 
-To use this module, you will need to have .NET installed on your machine. Here are the steps to install it:
-
-1. Download and install .NET from [here](https://dotnet.microsoft.com/download).
-2. Clone this repository on your local machine using `git clone https://github.com/16george/picpresence_module.git`.
-
-## Usage 🕹️
 You can install the library via .NET CLI
 ```bash
 dotnet add package picpresencemodule --version 1.1.3
